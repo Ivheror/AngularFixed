@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwnerService } from 'src/app/owner/owner.service';
 import { Owner } from '../owner/owner';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-owner',
@@ -11,7 +11,9 @@ import { Owner } from '../owner/owner';
 export class ListOwnerComponent implements OnInit {
   public owners:Owner[];
   router: any;
-  constructor(private ownerService: OwnerService) { }
+  constructor(private ownerService: OwnerService,private router2: Router) { 
+    
+  }
 
   ngOnInit() {
       this.ownerService.getOwners().subscribe(
@@ -19,8 +21,8 @@ export class ListOwnerComponent implements OnInit {
      
   }
   onSelect(owner: Owner){
-    this.router.navigate(['/owners'], owner.id);
-    
+    // forma antigua this.router.navigate(['/owners'], owner.id);
+    this.router.navigate()
   }
 
 }

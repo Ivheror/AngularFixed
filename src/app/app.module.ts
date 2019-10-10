@@ -10,10 +10,11 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { ListvetsComponent } from './listvets/listvets.component';//importante se usa siempre este.
 import { DetailOwnerComponent } from './owner/detail-owner/detail-owner.component';
+import { FormOwnerComponent } from './owner/form-owner/form-owner.component';
 
 @NgModule({
   declarations: [ //declaracion imports y exports
-    AppComponent, ListOwnerComponent, HomeComponent, NavComponent, ListvetsComponent, DetailOwnerComponent
+    AppComponent, ListOwnerComponent, HomeComponent, NavComponent, ListvetsComponent, DetailOwnerComponent, FormOwnerComponent
   ],
   imports: [
     BrowserModule,

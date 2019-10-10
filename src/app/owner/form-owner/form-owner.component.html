@@ -1,0 +1,10 @@
+<form #ownerForm="ngForm" (ngSubmit)="onSubmit()">
+  <legend>Form</legend>
+  <label for="name"></label>
+  <input type="text" [(ngModel)]="owner.firstName" name="firstName">Nombre
+  <label for="lastname"></label>
+  <input type="text" [(ngModel)]="owner.lastName" name="firstName">Apellido
+  <label for="city"></label>
+  <input type="text" [(ngModel)]="owner.city" name="firstName">Ciudad
+  <button type="submit">Enviar</button>
+</form>
