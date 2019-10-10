@@ -1,0 +1,11 @@
+<h1>Buscar</h1>
+
+<form>
+  <input type="text" name="name" [(ngModel)]="name" placeholder="{{placeholderButton}}">
+  <input type="button" (click)="search()" value="{{labelButton}}">
+</form>
+
+<p>Consulta : {{name}}</p>
+<p> {{result}}</p>
+
+
